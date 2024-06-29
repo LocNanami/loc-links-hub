@@ -145,7 +145,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		height: 200px;
+		height: 198px; /* border の分2px高さ調整してる		 */
 		object-fit: contain;
 		clip-path: polygon(35% 0%, 90% 0%, 65% 100%, 10% 100%);
 		margin-left: -20px;
