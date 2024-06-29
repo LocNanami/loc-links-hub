@@ -33,11 +33,13 @@
 
 <div class="geometric-bg"></div>
 <div class="main">
-	<div class="container">
-		<div class="image"></div>
+	<div class="container head">
+		<div class="image">
+			<img src="head-image.png" alt="Loc Nanami" />
+		</div>
 		<h1>Loc Nanami</h1>
 	</div>
-	<div class="container">
+	<div class="container links">
 		<p>SNS Links</p>
 		<ul class="sns-links">
 			{#each socialLinks as link, index}
@@ -131,15 +133,38 @@
 		gap: 32px;
 	}
 
+	.head {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 200px;
+		padding-left: 300px;
+	}
+	.head .image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 200px;
+		object-fit: contain;
+		clip-path: polygon(35% 0%, 90% 0%, 65% 100%, 10% 100%);
+		margin-left: -20px;
+	}
+	.head img {
+		height: 100%;
+	}
 	.container {
 		background: rgba(255, 255, 255, 0.1);
 		backdrop-filter: blur(10px);
-		padding: 0 40px;
 		box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
 		border: 1px solid rgba(255, 255, 255, 0.18);
-		width: 600px;
+		min-width: 700px;
 		z-index: 1;
 		color: #ffffff;
+		box-sizing: border-box;
+	}
+	.links {
+		padding: 0 40px;
 	}
 
 	h1 {
