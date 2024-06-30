@@ -223,7 +223,7 @@
 		}
 	}
 
-	@media (max-width: 500px) {
+	@media (max-width: 580px) {
 		.head {
 			padding-left: 115px;
 			height: 130px;
