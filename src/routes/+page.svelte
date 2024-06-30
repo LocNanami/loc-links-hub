@@ -60,15 +60,13 @@
 	:global(body) {
 		font-family: 'Poppins', sans-serif;
 		margin: 0;
-		padding: 0;
+		padding: 42px;
 		min-height: 100vh;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		overflow: hidden;
 		background: linear-gradient(-45deg, #1e3c72, #2a5298, #2980b9, #2c3e50);
 		background-size: 400% 400%;
 		animation: gradientBG 15s ease infinite;
+		min-width: 250px;
 	}
 
 	@keyframes gradientBG {
@@ -131,6 +129,8 @@
 		justify-content: center;
 		z-index: 1;
 		gap: 32px;
+		max-width: 800px;
+		margin: auto;
 	}
 
 	.head {
@@ -140,6 +140,8 @@
 		justify-content: center;
 		height: 200px;
 		padding-left: 300px;
+		padding-right: 30px;
+		min-width: 100px;
 	}
 	.head .image {
 		position: absolute;
@@ -148,7 +150,7 @@
 		height: 198px; /* border の分2px高さ調整してる		 */
 		object-fit: contain;
 		clip-path: polygon(35% 0%, 90% 0%, 65% 100%, 10% 100%);
-		margin-left: -20px;
+		margin-left: -10px;
 	}
 	.head img {
 		height: 100%;
@@ -158,10 +160,10 @@
 		backdrop-filter: blur(10px);
 		box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
 		border: 1px solid rgba(255, 255, 255, 0.18);
-		min-width: 700px;
 		z-index: 1;
 		color: #ffffff;
 		box-sizing: border-box;
+		width: 100%;
 	}
 	.links {
 		padding: 0 40px;
@@ -218,6 +220,18 @@
 		to {
 			opacity: 1;
 			transform: translateY(0);
+		}
+	}
+
+	@media (max-width: 500px) {
+		.head {
+			padding-left: 115px;
+			height: 130px;
+		}
+		.head .image {
+			clip-path: polygon(40% 0%, 65% 0%, 55% 100%, 30% 100%);
+			margin-left: -50px;
+			height: 128px;
 		}
 	}
 </style>
