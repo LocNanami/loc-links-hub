@@ -58,7 +58,7 @@
 
 <style>
 	:global(body) {
-		font-family: 'Poppins', sans-serif;
+		font-family: 'Chakra Petch', sans-serif;
 		margin: 0;
 		padding: 42px;
 		min-height: 100vh;
