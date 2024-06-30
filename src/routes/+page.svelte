@@ -230,7 +230,7 @@
 		}
 		.head .image {
 			clip-path: polygon(40% 0%, 65% 0%, 55% 100%, 30% 100%);
-			margin-left: -50px;
+			margin-left: -42px;
 			height: 128px;
 		}
 	}
