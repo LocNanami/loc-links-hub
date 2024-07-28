@@ -8,12 +8,13 @@
 	}
 
 	const socialLinks: SocialLink[] = [
-		{ name: 'Twitter', url: 'https://twitter.com/nana_loc_', icon: 'fa-twitter' },
+		{ name: 'Twitter', url: 'https://twitter.com/nana_loc_', icon: 'fab fa-twitter' },
 		{
 			name: 'YouTube',
 			url: 'https://www.youtube.com/channel/UC0lKmMdlipz2z_Gj1yHsbNw',
-			icon: 'fa-youtube'
-		}
+			icon: 'fab fa-youtube'
+		},
+		{ name: 'Pokekara', url: 'https://u.pokekara.com/user/2135111424', icon: 'fas fa-microphone' }
 	];
 
 	onMount(() => {
@@ -46,7 +47,7 @@
 				<li style="animation-delay: {index * 0.1}s;">
 					<a href={link.url} target="_blank" rel="noopener noreferrer">
 						<div class="icon">
-							<i class={`fab ${link.icon}`}></i>
+							<i class={`${link.icon}`}></i>
 						</div>
 						{link.name}
 					</a>
