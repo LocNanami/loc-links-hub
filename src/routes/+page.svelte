@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import GeometricBackground from '../component/GeometricBackground.svelte';
 
 	interface SocialLink {
 		name: string;
