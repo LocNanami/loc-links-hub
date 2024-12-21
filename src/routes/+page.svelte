@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Fa from 'svelte-fa';
 	import { type IconDefinition } from '@fortawesome/free-regular-svg-icons';
-	import { faYoutube, faTwitter, faXTwitter, faBluesky } from '@fortawesome/free-brands-svg-icons';
+	import { faYoutube, faXTwitter, faBluesky } from '@fortawesome/free-brands-svg-icons';
 	import { faMicrophone } from '@fortawesome/free-solid-svg-icons';
 
 	interface SocialLink {
@@ -17,8 +17,8 @@
 			url: 'https://www.youtube.com/channel/UC0lKmMdlipz2z_Gj1yHsbNw',
 			icon: faYoutube
 		},
-		// { name: 'Bluesky', url: 'https://bsky.app/profile/nanaloc.bsky.social', icon: faBluesky },
 		{ name: 'Pokekara', url: 'https://u.pokekara.com/user/2135111424', icon: faMicrophone }
+		// { name: 'Bluesky', url: 'https://bsky.app/profile/nanaloc.bsky.social', icon: faBluesky },
 	];
 </script>
 
@@ -204,10 +204,11 @@
 	}
 
 	.sns-links .icon {
-		display: inherit;
+		display: flex;
+		justify-content: center;
 		margin-right: 15px;
 		font-size: 24px;
-		width: 30px;
+		width: 32px;
 		text-align: center;
 	}
 
