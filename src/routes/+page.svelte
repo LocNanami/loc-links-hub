@@ -59,7 +59,7 @@
 	:global(body) {
 		font-family: 'Chakra Petch', sans-serif;
 		margin: 0;
-		padding: 42px;
+		padding: 32px;
 		min-height: 100vh;
 		overflow: hidden;
 		background: linear-gradient(-45deg, #1e3c72, #2a5298, #2980b9, #2c3e50);
@@ -165,7 +165,7 @@
 		width: 100%;
 	}
 	.links {
-		padding: 0 40px;
+		padding: 0 32px;
 	}
 
 	h1 {
