@@ -1,28 +1,25 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import GeometricBackground from '../component/GeometricBackground.svelte';
+	import Fa from 'svelte-fa';
+	import { type IconDefinition } from '@fortawesome/free-regular-svg-icons';
+	import { faYoutube, faTwitter, faXTwitter, faBluesky } from '@fortawesome/free-brands-svg-icons';
+	import { faMicrophone } from '@fortawesome/free-solid-svg-icons';
 
 	interface SocialLink {
 		name: string;
 		url: string;
-		icon: string;
+		icon: IconDefinition;
 	}
 
 	const socialLinks: SocialLink[] = [
-		{ name: 'Twitter', url: 'https://twitter.com/nana_loc_', icon: 'fab fa-twitter' },
+		{ name: 'Twitter', url: 'https://twitter.com/nana_loc_', icon: faXTwitter },
 		{
 			name: 'YouTube',
 			url: 'https://www.youtube.com/channel/UC0lKmMdlipz2z_Gj1yHsbNw',
-			icon: 'fab fa-youtube'
+			icon: faYoutube
 		},
-		{ name: 'Pokekara', url: 'https://u.pokekara.com/user/2135111424', icon: 'fas fa-microphone' }
+		// { name: 'Bluesky', url: 'https://bsky.app/profile/nanaloc.bsky.social', icon: faBluesky },
+		{ name: 'Pokekara', url: 'https://u.pokekara.com/user/2135111424', icon: faMicrophone }
 	];
-
-	onMount(() => {
-		const script = document.createElement('script');
-		script.src = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js';
-		document.head.appendChild(script);
-	});
 </script>
 
 <svelte:head>
@@ -48,7 +45,7 @@
 				<li style="animation-delay: {index * 0.1}s;">
 					<a href={link.url} target="_blank" rel="noopener noreferrer">
 						<div class="icon">
-							<i class={`${link.icon}`}></i>
+							<Fa icon={link.icon} />
 						</div>
 						{link.name}
 					</a>
