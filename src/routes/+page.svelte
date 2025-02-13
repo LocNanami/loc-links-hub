@@ -166,6 +166,7 @@
 	}
 	.links {
 		padding: 0 32px;
+		padding-bottom: 18px;
 	}
 
 	h1 {
