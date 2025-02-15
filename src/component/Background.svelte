@@ -57,19 +57,4 @@
 			transform: translate(-50%, 0) rotate(360deg);
 		}
 	}
-
-	.square {
-		position: absolute;
-		background: rgba(255, 255, 255, 0.5);
-		animation: move-squares linear infinite;
-	}
-
-	@keyframes move-squares {
-		0% {
-			transform: translateX(-100vw);
-		}
-		100% {
-			transform: translateX(100vw);
-		}
-	}
 </style>
